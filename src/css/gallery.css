@@ -1,22 +1,16 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-.container {
-    width: 1158px;
+.gallery {
     margin: 0 auto;
-    padding: 0 15px 0 15px;
-}
-ul.gallery{
-    margin: 0;
-    padding: 24px 0;
+    width: 1128px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    list-style-type: none;
-}
-.gallery-image{
+  }
+  
+  .gallery-image {
     width: 360px;
-    height: 200px;
-}
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image:hover {
+      transform: scale(1.04);
+  }
